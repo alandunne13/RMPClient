@@ -60,7 +60,8 @@
 					<sdk>
 						<path>
 						${ANDROID_HOME}
-						</path>		
+						</path>
+						<platform>19</platform>
 					</sdk>
 				</configuration>
 			</plugin>
