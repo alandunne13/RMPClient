@@ -58,7 +58,9 @@
 				<artifactId>android-maven-plugin</artifactId>
 				<configuration>
 					<sdk>
-						<platform>19</platform>
+						<path>
+						${ANDROID_HOME}
+						</path>		
 					</sdk>
 				</configuration>
 			</plugin>
