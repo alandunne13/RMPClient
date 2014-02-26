@@ -58,10 +58,8 @@
 				<artifactId>android-maven-plugin</artifactId>
 				<configuration>
 					<sdk>
-						<path>
-						${ANDROID_HOME}
-						</path>
-						<platform>17</platform>
+						<path>${ANDROID_HOME}</path>
+						<platform>${ANDROID_TARGET}</platform>
 					</sdk>
 				</configuration>
 			</plugin>
