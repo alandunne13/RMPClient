@@ -62,7 +62,7 @@
 				<artifactId>android-maven-plugin</artifactId>
 				<configuration>
 					<sdk>
-						<platform>${ANDROID_TARGET}</platform>
+						<platform>${ANDROID_PLATFORM}</platform>
 					</sdk>
 				</configuration>
 			</plugin>
