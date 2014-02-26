@@ -61,7 +61,7 @@
 						<path>
 						${ANDROID_HOME}
 						</path>
-						<platform>18</platform>
+						<platform>17</platform>
 					</sdk>
 				</configuration>
 			</plugin>
