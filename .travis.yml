@@ -6,7 +6,6 @@ env:
     - ANDROID_SDKS=android-10           ANDROID_TARGET=android-10  ANDROID_ABI=armeabi      ANDROID_TARGET=10
     - ANDROID_SDKS=sysimg-16            ANDROID_TARGET=android-16  ANDROID_ABI=armeabi-v7a  ANDROID_TARGET=16
     - ANDROID_SDKS=android-17,sysimg-17 ANDROID_TARGET=android-17  ANDROID_ABI=armeabi-v7a  ANDROID_TARGET=17
-	
 before_install:
     # Install base Android SDK
     - sudo apt-get update -qq
