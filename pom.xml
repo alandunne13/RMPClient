@@ -31,6 +31,7 @@
 	</dependencies>
 	
 	<build>
+	
 	    <resources>
         	<resource>
             	<directory>src</directory>
@@ -39,9 +40,11 @@
             	</excludes>
         	</resource>
     	</resources>
-	    <sourceDirectory>src</sourceDirectory>
+	
+		<sourceDirectory>src</sourceDirectory>
 	    <testSourceDirectory>test</testSourceDirectory>
 		<finalName>${project.artifactId}</finalName>
+		
 		<pluginManagement>
 			<plugins>
 				<plugin>
@@ -52,18 +55,19 @@
 				</plugin>
 			</plugins>
 		</pluginManagement>
+		
 		<plugins>
 			<plugin>
 				<groupId>com.jayway.maven.plugins.android.generation2</groupId>
 				<artifactId>android-maven-plugin</artifactId>
 				<configuration>
 					<sdk>
-						<path>${ANDROID_HOME}</path>
-						<platform>${ANDROID_TARGET}</platform>
+						<platform>19</platform>
 					</sdk>
 				</configuration>
 			</plugin>
 		</plugins>
+		
 	</build>
 	
 </project>
