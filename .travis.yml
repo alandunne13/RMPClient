@@ -7,6 +7,7 @@ before_install:
   - export PATH=${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
   - android update sdk --filter 1,2,9 --no-ui --force
   - android update sdk --no-ui --all --force
-  - apt-get --no-install-recommends install ia32-libs-multiarch
+  - sudo apt-get update
+  - sudo apt-get install ia32-libs-multiarch:i386
   
 script: mvn clean install
