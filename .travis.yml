@@ -26,6 +26,8 @@ before_install:
   # Other relevant API's:
   # addon-google_apis-google-16
   - android update sdk --filter platform-tools,android-16,extra-android-support,$ANDROID_SDKS --no-ui --force > /dev/null
+  - android update sdk --no-ui --obsolete --force
+  - android list sdk -a --extended
 
 before_script:
   - ./wait_for_emulator
