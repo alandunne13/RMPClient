@@ -29,7 +29,4 @@ before_install:
   - android update sdk --no-ui --obsolete --force
   - android list sdk -a --extended
 
-before_script:
-  - ./wait_for_emulator
-
 script: mvn clean install -Dandroid.device=test
